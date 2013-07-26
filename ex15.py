@@ -22,18 +22,26 @@ print "Here's your file %r:" % filename
 
 print txt.read()
 
-## another print message
-#
-#print "Type the filename again:"
-#
-## ask for input with prompt. put result in file_again
-#
+# close txt
+
+txt.close()
+
+# another print message
+
+print "Type the filename again:"
+
+# ask for input with prompt. put result in file_again
+
 file_again = raw_input(prompt)
-#
-## open the file and put its contents in txt_again
-#
-#txt_again = open(file_again)
-#
-## give the file txt_again a read command and print the result
-#
-#print txt_again.read()
+
+# open the file and put its contents in txt_again
+
+txt_again = open(file_again)
+
+# give the file txt_again a read command and print the result
+
+print txt_again.read()
+
+# close txt_again
+
+txt_again.close()
